@@ -3,3 +3,4 @@ The script 1-compuler compiles C code but does not link and save it in an output
 The script 2-assembler generates an assembly file with same name as c file.
 The script 3-name creates an executable file cisfun.
 This script prints the sentences on screen without using printf
+The 5-printf.c script prints the words using printf
