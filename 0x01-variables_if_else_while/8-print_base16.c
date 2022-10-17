@@ -13,9 +13,9 @@ int main(void)
 		putchar(hex16);
 		hex16++;
 	}
-	hex16  = 'A';
+	hex16  = 'a';
 
-	while (hex16 <= 'F')
+	while (hex16 <= 'f')
 	{
 		putchar(hex16);
 		hex16++;
