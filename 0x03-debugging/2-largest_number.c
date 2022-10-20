@@ -22,7 +22,7 @@ int largest_number(int a, int b, int c)
 		largest = b;
 		printf("%i is the largest number", b);
 	}
-	else
+	else if (c >= a && c >= b)
 	{
 		largest = c;
 		printf("%i is the largest number", c);
