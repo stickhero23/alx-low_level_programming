@@ -4,3 +4,4 @@ The script 1-alphabet.c prints lower case alphabet
 The 2-print_alphabet_x10.c script prints alphabet 10 times
 The script 3-islower.c checks if the letter is lower case
 The script 4-isalpha.c Returns 1 if c is a letter, lowercase or uppercase, 0 otheriwse
+The script 5-sign.c print the sign 
