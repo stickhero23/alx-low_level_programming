@@ -7,7 +7,7 @@
  * @n: int type number
  * Return: Always 0, success.
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	if (n > 98)
 	{
@@ -28,7 +28,7 @@ int print_to_98(int n)
 			printf("%d", n);
 			if (n != 98)
 			{
-				print(", ");
+				printf(", ");
 			}
 			n++;
 		}
