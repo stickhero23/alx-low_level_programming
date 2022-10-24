@@ -7,7 +7,11 @@ int main(void)
 {
 	int c;
 
-	for (c = 1; c <= 100; c++)
+	c = 1;
+
+	printf("%d", c);
+
+	for (c = 2; c <= 100; c++)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
 		{
