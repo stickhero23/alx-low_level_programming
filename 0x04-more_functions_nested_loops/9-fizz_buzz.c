@@ -30,6 +30,7 @@ int main(void)
 			printf(" ");
 		c++;
 	}
-printf("\n");
-return (0);
+	printf("\n");
+
+	return (0);
 }
