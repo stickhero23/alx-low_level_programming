@@ -4,10 +4,10 @@
  * @c: int type number
  * Return: Always 0, Success.
  */
-void main(void)
+int main(void)
 {
-	int c = 1;
-
+	int c;
+	c = 1;
 	while (c <= 100)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
