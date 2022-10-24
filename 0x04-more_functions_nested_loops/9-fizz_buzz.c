@@ -7,26 +7,27 @@
 int main(void)
 {
 	int c;
-	c = 1;
-	while (c <= 100)
+
+	for (c = 1; c <= 100; c++)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
-		else if (c % 3 == 0 && c % 5 != 0)
+		else if (c % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
-		else if (c % 5 == 0 && c % 3 != 0)
+		else if (c % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", c);
+			printf("%d", c);
 		}
-		c++;
+		if (c < 100)
+			printf(" ");
 	}
 	printf("\n");
 
