@@ -6,6 +6,7 @@
  */
 void main(int c)
 {
+	c = 1;
 	while (c <= 100)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
