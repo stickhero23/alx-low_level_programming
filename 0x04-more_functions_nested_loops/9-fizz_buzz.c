@@ -4,9 +4,10 @@
  * @c: int type number
  * Return: Always 0, Success.
  */
-void main(int c)
+void main(void)
 {
-	c = 1;
+	int c = 1;
+
 	while (c <= 100)
 	{
 		if (c % 3 == 0 && c % 5 == 0)
@@ -22,6 +23,7 @@ void main(int c)
 		else if (c % 5 == 0)
 		{
 			printf("Buzz");
+			printf(" ");
 		}
 		else
 		{
