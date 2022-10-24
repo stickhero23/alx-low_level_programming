@@ -28,6 +28,8 @@ int main(void)
 		}
 		if (c < 100)
 			printf(" ");
+		else
+			printf("Buzz");
 	}
 	printf("\n");
 
