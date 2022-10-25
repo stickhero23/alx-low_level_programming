@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i % pf == 0)
 		{
-			n /= pf;
+			i /= pf;
 			pf--;
 		}
 	}
