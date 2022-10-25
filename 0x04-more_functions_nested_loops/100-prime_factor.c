@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-	long int i, pf;
+	int i;
+	long pf;
 
 	i = 612852475143;
 	for (pf = 2; pf <= i; pf++)
@@ -16,6 +17,6 @@ int main(void)
 			pf--;
 		}
 	}
-	printf("%ld", pf);
+	printf("%ld\n", pf);
 	return (0);
 }
