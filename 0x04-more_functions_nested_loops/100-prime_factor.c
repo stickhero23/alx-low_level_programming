@@ -14,8 +14,9 @@ int main(void)
 		if (i % pf == 0)
 		{
 			i /= pf;
-			pf--;
+			pf = 2;
 		}
+			pf++;
 	}
 	printf("%ld\n", pf);
 	return (0);
