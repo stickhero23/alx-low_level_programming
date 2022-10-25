@@ -7,3 +7,4 @@ The script 6-print_line.c draws a straight line
 print_diagonal draws a diagonal line on the terminal
 Print square
 10-print_triangle.c prints a triangle
+100-prime_factor.c finds and prints the largest prime factor of the number 612852475143, followed by a new line
