@@ -5,3 +5,4 @@ Adding 3-strcmp.c that compares two strings
 Adding 7-leet.c that encodes 1337
 6-cap_string.c capitalizes a word string
 4-rev_array.c revserses an array
+string_toupper changes lowercase to upper case
