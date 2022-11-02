@@ -1,8 +1,8 @@
 #include "main.h"
-#define NULL 0
 /**
  * _strchr - locates a character in a string
  * @s: pointer to type char
+ * @c: type char
  * Return: returns position of the character or NULL
  */
 char *_strchr(char *s, char c)
@@ -18,6 +18,6 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		return (NULL);
+		return (0);
 	}
 }
