@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 /**
  * _strchr - locates a character in a string
  * @s: pointer to type char
@@ -17,6 +18,6 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		return (0);
+		return (NULL);
 	}
 }
