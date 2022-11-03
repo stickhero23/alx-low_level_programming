@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_diagsums - prints sum of two diagonals
- * @: pointer to type integer
+ * @a: pointer to type integer
  * @size: size of matrix
  * Return: returns the sum of two diagonals
  */
@@ -14,14 +14,14 @@ void print_diagsums(int *a, int size)
 
 	for (row = 0; row < size; row++)
 	{
-		i = (row * size) + row;
-		sum_1 += a[i];
+		j = (row * size) + row;
+		sum_1 += a[j];
 	}
 
 	for (row = 1; row <= size; row++)
 	{
-		i = (row * size) - row;
-		sum_2 += a[i];
+		j = (row * size) - row;
+		sum_2 += a[j];
 	}
 	printf("%d, %d\n", sum_1, sum_2);
 }
