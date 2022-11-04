@@ -4,3 +4,4 @@
 3-factorial.c finds factorial of n
 4-pow_recursion.c power of a number
 5-sqrt_recursion.c finds square root
+6-is_prime_number.c finds if a number is prime
