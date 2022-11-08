@@ -8,6 +8,7 @@
  */
 int main(int argc, int *argv[])
 {
+	(void) argc;
 	int mult;
 
 	if (argc == 3)
