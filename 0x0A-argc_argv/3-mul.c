@@ -15,10 +15,10 @@ int main(int argc, int *argv[])
 	{
 		mult = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mult);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
-	}
-	return (0);
+		return (1);
 }
