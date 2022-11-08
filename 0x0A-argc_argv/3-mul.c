@@ -6,7 +6,7 @@
  * @argv: array of arguments to command line
  * Return: 0 if success and 1 is failure.
  */
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
