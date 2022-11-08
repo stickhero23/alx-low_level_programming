@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *main - entry point to print multiplication.
  *@argc: number of arguments
