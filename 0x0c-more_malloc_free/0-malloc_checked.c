@@ -1,15 +1,14 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * malloc_checked  - allocates memory using malloc.
  * @b: unsigned int
- * Returns: returns a pointer to the allocated memory.
+ * Return: returns a pointer to malloc..
  */
 void *malloc_checked(unsigned int b)
 {
-	int *p;
-	
+	void *p;
+
 	p = malloc(b);
 
 	if (p == NULL)
