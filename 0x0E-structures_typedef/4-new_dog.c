@@ -10,7 +10,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog this_dog;
+	struct dog *this_dog;
 	int i, j, k;
 	char *m, *n;
 
@@ -37,13 +37,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (k = 0; k <= i; k++)
 		m[k] = name[k];
-	for (k = 0; k <= ; k++)
+	for (k = 0; k <= j; k++)
 		n[k] = owner[k];
 
 
 	this_dog->name = m;
 	this_dog->age = age;
-	this_doge->owner = n;
+	this_dog->owner = n;
 
 	return (this_dog);
 }
