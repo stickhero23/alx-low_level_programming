@@ -10,40 +10,68 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *this_dog;
-	int i, j, k;
-	char *m, *n;
+	dog_t *this_dog;
+	char *copy_name;
+	char *copy_owner;
 
-	this_dog = malloc(sizeof(struct dog));
+	this_dog = malloc(sizeof(dog_t));
 	if (this_dog == NULL)
 		return (NULL);
-	i = 0;
-	while (name[i] != '\0')
-		i++;
-	while (owner[j] != '\0')
-		j++;
-	m = malloc(sizeof(char) * i + 1);
-	if (m == NULL)
-	{
-		free(this_dog);
-		return (NULL);
-	}
-	n = malloc(sizeof(char) * j + 1);
-	if (n == NULL)
-	{
-		free(n);
-		free(this_dog);
-		return (NULL);
-	}
-	for (k = 0; k <= i; k++)
-		m[k] = name[k];
-	for (k = 0; k <= j; k++)
-		n[k] = owner[k];
-
-
-	this_dog->name = m;
 	this_dog->age = age;
-	this_dog->owner = n;
+
+	if (name != NULL)
+	{
+		copy_name = malloc(_strlen(name) + 1);
+		if (copy_name == NULL)
+		{
+			free(this_dog);
+			return (NULL);
+		}
+		this_dog->name = _strcpy(copy_name, name);
+	}
+	else
+		this_dog->name = NULL;
+	if (owner != NULL)
+	{
+		copy_owner = malloc(_strlen(owner) + 1);
+		if (copy_owner == NULL)
+		{
+			free(copy_name);
+			free(this_dog);
+			return (NULL);
+		}
+		this_dog->owner = _strcpy(copy_owner, owner);
+	}
+	else
+		this_dog->owner = NULL;
 
 	return (this_dog);
+}
+/**
+ * _strcpy - copying string src to dest
+ * @dest: string
+ * @src: string source
+ * Return: returns combined string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; i <= _strlen(src); i++)
+		dest[i] = src[i];
+
+	return (dest);
+}
+/**
+ * _strlen - finds length of string
+ * @str: pointer type char
+ * Return: returns length of string
+ */
+int _strlen(char *str)
+{
+	int i;
+
+	for (i = 0; *(str + i); i++)
+		;
+	return (i);
 }
