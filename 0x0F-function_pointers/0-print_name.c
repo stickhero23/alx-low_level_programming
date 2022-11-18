@@ -1,5 +1,4 @@
-#include <stdlib>
-#include "function_pointers.h"
+#include <stdlib.h>
 /**
  * print_name - to execute the function as a parameter
  * @name: the paramenter for the function pointer

@@ -1,5 +1,5 @@
-#ifdef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_H
+#ifdef FUNCTION_POINTERS
+#define FUNCTION_POINTERS
 void print_name(char *name, void (*f)(char *));
 #endif
 
