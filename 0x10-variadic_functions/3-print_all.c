@@ -10,16 +10,14 @@ void print_all(const char * const format, ...)
 {
 	char *separator = "";
 	int i, j = 0;
-	va_list all;
+	va_list all_types;
 
-	check_datatype dt[] = {
-		{'c', print_char},
+	check_datatype dt[] = { {'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string},
-		{'\0', NULL}
-	};
-	va_start(all, format);
+		{'\0', NULL} };
+	va_start(all_types, format);
 
 	while (format != NULL && format[j] != '\0')
 	{
@@ -36,42 +34,42 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
-	va_end(all);
+	va_end(all_types);
 	printf("\n");
 }
 /**
  * print_char - prints char
  * @all: va list
  */
-void print_char(va_list all)
+void print_char(va_list all_types)
 {
-	printf("%d", va_arg(all, int));
+	printf("%c", va_arg(all_types, int));
 }
 /**
  * print_int - prints integers
  * @all: va list
  */
-void print_int(va_list all)
+void print_int(va_list all_types)
 {
-	printf("%d", va_arg(all, int));
+	printf("%d", va_arg(all_types, int));
 }
 /**
  * print_float - prints float
  * @all: va list
  */
-void print_float(va_list all)
+void print_float(va_list all_types)
 {
-	printf("%f", va_arg(all, double));
+	printf("%f", va_arg(all_types, double));
 }
 /**
  * print_string - prints string
  * @all: va list
  */
-void print_string(va_list all)
+void print_string(va_list all_types)
 {
 	char *s;
 
-	s = va_arg(all, char *);
+	s = va_arg(all_types, char *);
 
 	if (s == NULL)
 	{

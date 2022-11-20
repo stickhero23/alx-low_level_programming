@@ -15,6 +15,6 @@ int _putchar(char c);
 typedef struct choosetype
 {
 	char letter;
-	void (*func)(all);
+	void (*func)(all_types);
 } check_datatype;
 #endif
