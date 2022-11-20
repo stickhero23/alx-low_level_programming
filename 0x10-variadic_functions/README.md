@@ -1,0 +1,1 @@
+Finds sum of arguments
