@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 			if (dt[i].letter == format[j])
 			{
 				printf("%s", separator);
-				dt[i].func(all);
+				dt[i].func(all_types);
 				separator = ", ";
 			}
 			i++;
