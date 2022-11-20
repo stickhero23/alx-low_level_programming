@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 		i = 0;
 		while (dt[i].letter != '\0')
 		{
-			if (choice[i].letter == format[j])
+			if (dt[i].letter == format[j])
 			{
 				printf("%s", separator);
 				dt[i].func(all);
@@ -70,6 +70,7 @@ void print_float(va_list all)
 void print_string(va_list all)
 {
 	char *s;
+
 	s = va_arg(all, char *);
 
 	if (s == NULL)
