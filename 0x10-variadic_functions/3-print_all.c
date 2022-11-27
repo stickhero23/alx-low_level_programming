@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	char *separator = "";
-	int i, j = 0;
+	unsigned int i, j = 0;
 	va_list all_types;
 
 	check_datatype dt[] = { {'c', print_char},
@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 }
 /**
  * print_char - prints char
- * @all: va list
+ * @all_types: va list
  */
 void print_char(va_list all_types)
 {
@@ -47,7 +47,7 @@ void print_char(va_list all_types)
 }
 /**
  * print_int - prints integers
- * @all: va list
+ * @all_types: va list
  */
 void print_int(va_list all_types)
 {
@@ -55,7 +55,7 @@ void print_int(va_list all_types)
 }
 /**
  * print_float - prints float
- * @all: va list
+ * @all_types: va list
  */
 void print_float(va_list all_types)
 {
@@ -63,7 +63,7 @@ void print_float(va_list all_types)
 }
 /**
  * print_string - prints string
- * @all: va list
+ * @all_types: va list
  */
 void print_string(va_list all_types)
 {
