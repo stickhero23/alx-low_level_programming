@@ -6,17 +6,21 @@
  */
 char *leet(char *s)
 {
-	int i, j;
-	int m[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int n[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	int i;
+	int j = 0;
+	char *m = "aAeEoOlLtT";
+	char *n = "4433001177";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (s[i] != '\0')
 	{
-		for (i = 0; m[i] != '\0'; i++)
+		while (*(m + i) != '\0')
 		{
-			if (s[i] == m[i])
-				s[i] = n[i];
+			if (*(s + i) == *(l + j))
+				*(s + i) = *(n + j);
+			j++;
 		}
+		j = 0;
+		i++;
 	}
 	return (s);
 }
