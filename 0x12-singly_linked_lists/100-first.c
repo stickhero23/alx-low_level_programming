@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*(
+/**
  * before_main - prints a statement before running
  * a function.
  */
