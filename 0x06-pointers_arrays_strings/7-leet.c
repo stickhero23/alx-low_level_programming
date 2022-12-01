@@ -11,11 +11,11 @@ char *leet(char *s)
 	char *m = "aAeEoOlLtT";
 	char *n = "4433001177";
 
-	for (s[i] != '\0')
+	for (i = 0;s[i] != '\0';i++)
 	{
 		while (*(m + i) != '\0')
 		{
-			if (*(s + i) == *(l + j))
+			if (*(s + i) == *(m + j))
 				*(s + i) = *(n + j);
 			j++;
 		}
