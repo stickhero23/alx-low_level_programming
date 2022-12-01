@@ -9,7 +9,7 @@ char *cap_string(char *str)
 	int i = 0;
 
 	if (str[i] >= 'a' && str[i] <= 'z')
-		str[i] = sstr[i] - 'a' + 'A';
+		str[i] = str[i] - 'a' + 'A';
 	i++;
 	while (str[i] != '\0')
 	{
