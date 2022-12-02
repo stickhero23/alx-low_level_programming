@@ -11,7 +11,7 @@ size_t free_listint_safe(listint_t **h)
 
 	count = 0;
 	prev = *h;
-	for (count = 0; prev != NULL;)
+	while (prev != temp)
 	{
 		count++;
 		temp = prev;
