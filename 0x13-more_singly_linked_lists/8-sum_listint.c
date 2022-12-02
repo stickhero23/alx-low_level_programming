@@ -11,6 +11,7 @@ int sum_listint(listint_t *head)
 
 	if (head == NULL)
 		return (NULL);
+	temp = head;
 	for (; temp != NULL;)
 	{
 		sum += temp->n;
