@@ -12,18 +12,23 @@ listint_t *find_listint_loop(listint_t *head)
 
 	temp = tmp = head;
 
-	while (temp != NULL && tmp != NULL)
-	{
-		temp = temp->next;
-		tmp = tmp->next;
-		
-		temp = tmp;
-		if (temp != tmp)
-		{
+	do {
+		if (temp->next)
 			temp = temp->next;
-			tmp = tmp->next;
-		}
-		return (temp);
+		else
+			return (NULL);
+		if (tmp->next->next)
+			tmp = tmp->next->next;
+		else 
+			return (NULL);
+	} while (tmp != temp);
+
+	temp = head;
+
+	while (tmp != temp)
+	{
+		tmp = tmp->next;
+		temp = temp->next;
 	}
-	return (NULL);
+	return (temp);
 }
