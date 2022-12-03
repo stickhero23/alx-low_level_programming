@@ -19,7 +19,7 @@ listint_t *find_listint_loop(listint_t *head)
 			return (NULL);
 		if (tmp->next->next)
 			tmp = tmp->next->next;
-		else 
+		else
 			return (NULL);
 	} while (tmp != temp);
 
