@@ -16,7 +16,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (index > max_bits)
 		return (-1);
 
-	bitvalue = ((n >> index) & 1);
+	bitvalue = n >> index;
 
-	return (bitvalue);
+	return (bitvalue & 1);
 }
