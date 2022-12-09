@@ -32,7 +32,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	return (1);
 }
 /**
- * _strlen - find length of string 
+ * _strlen - find length of string
  * @str: string
  * Return: length of string
  */
