@@ -1,12 +1,11 @@
 #include "main.h"
 /**
- * _putchar - Entry point
- *
- * Return: Always 0 (Success)
- *
+ * _puts - prints a string followed by stdout.
+ *@s: pointer of type char
+ *Return: Always 0, Success.
  */
-int puts(char *s)
+void _puts(char *s)
 {
-	(void) *s;
-	return (0);
+	(void) s;
+	_putchar('\n');
 }
