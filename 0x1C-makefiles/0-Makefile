@@ -1,7 +1,7 @@
 CC=gcc
 
-all: main.o school.o
-	$(CC) - school main.o school.o
+all: main.c school.c
+	$(CC) - main.c school.c -o school
 
 clean:
-	rm *.o
+	rm -f school
