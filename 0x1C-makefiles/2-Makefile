@@ -1,13 +1,10 @@
 CC=gcc
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $6 -o $@
-%.o: %.c
-	$(CC) -c $< -o $@
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	rm -f $(OBJ) $(NAME)
