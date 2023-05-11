@@ -8,51 +8,34 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int tmp;
-	size_t b = 0;
+	size_t left = 0;
+	size_t right = size - 1;
+	size_t mid;
+	size_t i;
 
 	if (array == NULL || size == 0)
 		return (-1);
-	size--;
-	while (b <= size)
-	{
-		print_array(array, b, size);
 
-		tmp = (size - b) / 2 + b;
-		if (array[tmp] == value)
-			return (tmp);
-		else if (array[tmp] < value)
+	while (left <= right)
+	{
+		mid = (left + right) / 2;
+
+		printf("Searching in array: ");
+		for (i = left; i <= right; i++)
 		{
-			if (size % 2 == 1)
-				b = tmp + 1;
-			else
-				b = tmp;
+			printf("%d", array[i]);
+			if (i < right)
+				printf(", ");
 		}
+		printf("\n");
+
+		if (array[mid] == value)
+			return (mid);
+		else if (array[mid] < value)
+			left = mid + 1;
 		else
-		{
-			if (size % 2 == 1)
-				size = tmp;
-			else
-				size = tmp - 1;
-		}
+			right = mid - 1;
 	}
-	return (-1);
-}
 
-/**
- * print_array - prints the current array
- * @array: array to print
- * @t: starting incrementer index
- * @size: size of the increment
- */
-void print_array(int *array, size_t t, size_t size)
-{
-	print("Searching in array: ");
-	for (; t <=  size; t++)
-	{
-		printf("%d", array[t]);
-		if (t < size)
-			printf(", ");
-	}
-	printf("\n");
+	return (-1);
 }
